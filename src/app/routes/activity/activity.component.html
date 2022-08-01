@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-between bg-transparent m-2">
+  <div class="m-2">
+    <span class="material-icons" role="button">photo_camera</span>
+  </div>
+  <div class="m-2">
+    <span class="material-icons md-36" role="button">directions_run</span>
+  </div>
+  <div class="m-2">
+    <span class="material-icons" role="button">headphones</span>
+  </div>
+</div>
+
+<app-notif></app-notif>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <span class="cfs-xl" role="button">01:25:12</span>
+      <!-- <span class="cfs-xl" role="button">{{ time }}</span> -->
+      <p class="text-muted">Duration</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <span class="cfs-m" role="button">10.69</span>
+      <p class="text-muted">Distance (mi)</p>
+    </div>
+    <div class="col">
+      <span class="cfs-m" role="button">07:59</span>
+      <p class="text-muted">Pace (min/mi)</p>
+    </div>
+    <div class="col">
+      <span class="cfs-m" role="button">1,265</span>
+      <p class="text-muted">Calories (cal)</p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <div class="d-flex position-absolute w-100" style="bottom: 10%;">
+    <div class="ms-3">
+      <button type="button" class="btn btn-whtie btn-circle btn-xl border">
+        <span class="material-icons">settings</span>
+      </button>
+    </div>
+    <div class="mx-4" style="flex: auto 1 1;">
+      <div class="d-grid">
+        <button class="btn btn-sm btn-primary rounded-pill text-wrap" 
+          type="button" (click)="toggleTimer()">
+          <span class="fs-3 text-uppercase">start
+            <p class="m-0 fs-6 fw-lighter">Running</p>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="me-3">
+      <button type="button" class="btn btn-whtie btn-circle btn-xl border">
+        <span class="material-icons">headphones</span>
+      </button>
+    </div>
+  </div>
+</div>

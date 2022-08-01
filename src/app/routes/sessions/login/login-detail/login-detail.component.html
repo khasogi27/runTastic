@@ -1,0 +1,24 @@
+<nav class="navbar bg-transparent m-4">
+  <span class="material-icons text-dark" role="button" (click)="onBack()">arrow_back</span>
+</nav>
+
+<ng-container>
+  <div class="p-4">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label text-uppercase">Email</label>
+        <input type="email" class="form-control rounded-0 bg-transparent border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label text-uppercase">Password</label>
+        <input type="password" class="form-control rounded-0 bg-transparent border-dark" id="exampleInputPassword1">
+      </div>
+      <div class="d-grid my-4">
+        <button class="btn btn-info rounded-pill text-white text-uppercase fw-bolder font-monospace p-3" type="button" (click)="onLogin()">login</button>
+      </div>
+      <div class="mb-2">
+        <label class="form-check-label text-uppercase text-white bg-dark fst-italic font-monospace p-2" role="button" (click)="onForgot()">forgot password?</label>
+      </div>
+    </form>
+  </div>
+</ng-container>

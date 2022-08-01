@@ -1,0 +1,35 @@
+<nav class="navbar bg-transparent m-4">
+  <span class="material-icons text-white" 
+    role="button" (click)="onBack()">
+    arrow_back
+  </span>
+</nav>
+
+<ng-container>
+  <div class="p-4">
+    <p class="display-1 fw-bold text-white text-uppercase">welcome back</p>
+    <p class="fs-4 fw-lighter text-white">
+      Log in with one of the following options and get started
+    </p>
+  </div>
+  <div class="d-grid gap-4 p-2 m-4 fixed-bottom fw-lighter">
+    <div class="d-flex d-grid">
+      <button class="btn btn-primary rounded-pill text-white fw-bold p-3 w-50" 
+        type="button" (click)="onAuth('facebook')">
+        <span class="material-icons" style="vertical-align: -6px;">navigate_next</span>
+        <span class="mx-2 text-capitalize fw-lighter">Facebook</span>
+      </button>
+      <span class="mx-2"></span>
+      <button class="btn btn-light rounded-pill text-white fw-bold p-3 w-50" 
+        type="button" (click)="onAuth('google')">
+        <span class="material-icons text-black" style="vertical-align: -6px;">navigate_next</span>
+        <span class="mx-2 text-black text-capitalize fw-lighter">Google</span>
+      </button>
+    </div>
+    <button class="btn btn-outline-light rounded-pill text-white fw-bold p-3" 
+      type="button" (click)="onLogin()">
+      <span class="material-icons" style="vertical-align: -6px;">mail</span>
+      <span class="mx-2 text-uppercase fw-bolder font-monospace">email</span>
+    </button>
+  </div>
+</ng-container>
